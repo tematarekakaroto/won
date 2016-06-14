@@ -1,0 +1,72 @@
+@keyframes nodo1{
+    0%  { top: 50%; left: 50%; }
+    100% { top: 28%; left: 50%;}
+}
+
+@keyframes aparecerImagen{
+    from {width: 0; height: 0;}
+    to {width: 54px; height: 54px;}
+}
+
+body{
+	background-color: #1C1E1B;
+}
+
+#contenido{
+    position: absolute;
+    /*margin: 1%;*/
+    padding: 1%;
+    width: 95%;
+    height: 95%;
+}   	
+
+#cerebroImg{
+    position: relative;
+    top: 40%;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    display: block; 
+    z-index: 100;
+}
+
+#cerebroImg:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+#ingestaImg{
+    position: relative;
+    top: 0%;
+    width: 54px;
+    height: 54px;
+    z-index: 99;
+    left: 84%;
+}
+#ingestaImg:hover{
+    -webkit-transform:scale(1.1);
+    transform: scale(1.1);
+}
+
+#nodoHaciaAlimentacion{
+    position: absolute;
+/*    top: 12%;
+    left: 48.5%;*/
+    width: 0%;
+    height: 0.5%;
+    background-color: #420501;
+    transform: rotate(-23deg);
+}
+
+.animar1{
+    animation-name: nodo1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.animar2{
+    animation-name: aparecerImagen;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+

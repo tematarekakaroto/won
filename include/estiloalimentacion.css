@@ -1,0 +1,12 @@
+body{
+	background-color: #dbdbdb;
+	position: absolute;
+    /*margin: 1%;*/
+    padding: 1%;
+    width: 95%;
+    height: 95%;
+}
+
+ul > li> a:hover{
+	background-color: red;
+}
